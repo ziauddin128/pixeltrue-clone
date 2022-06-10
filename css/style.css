@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header
+{
+    padding: 20px 60px;
+    background-image: url("../img/main.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.logo
+{
+    height: 40px;
+    width: 150px;
+}
+.navbar-toggler i
+{
+    color: black;
+    font-size: 30px;
+}
+.nav-item
+{
+    margin: 0 20px;
+}
+.nav-link
+{
+    color: white !important;
+    font-size: 16px;
+    padding-bottom: 8px;
+    text-decoration: none !important;
+    position: relative;
+}
+.nav-link:hover::before 
+{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: tomato;
+    border-radius: 3px;
+}
+.btn-hover
+{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: auto 20px;
+    padding: 10px 20px;
+    text-decoration: none !important;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.btn-hover:focus {
+    outline: none;
+}
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+.main
+{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main h2 
+{
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main p 
+{
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 700px;
+}
+
+.main .btn-hover{
+  align-items: center;
+  display:block;
+  margin: 20px auto !important;
+  width: 250px;
+}
+.contact_btn
+{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+.describe
+{
+    padding: 60px 0;
+    background-color: #0f123d;
+}
+.brand
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.brand img
+{
+    width: 110px;
+    height: 80px;
+    margin: 20px 20px;
+}
+
+.services
+{
+    padding: 60px 0;
+}
+.services h3,.guide h3,.works h3
+{
+   color: white;
+   text-align: center;
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 50px;
+   margin-bottom: 90px;
+}
+.services h3 span,.guide h3 span,.works h3 span
+{
+    color:#50b8dc;
+}
+.serviceBox
+{
+    margin: 15px 0;
+    position: relative;
+    padding: 40px 20px;
+    height: 50vh;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/sbc.svg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 24px;
+}
+.serviceBox:hover 
+{
+    box-shadow: 0 0 12px 1px rgb(80 184 220 / 70%);
+}
+.serviceBox img{
+    position: absolute;
+    top: -32%;
+    left: 20%;
+    width: 50%;
+    height: 40vh;
+}
+.serviceBox h6 
+{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: start !important;
+    margin: 80px 5px 6px 30px;
+    color: white;
+}
+.serviceBox p{
+    font-size: 17px;
+    font-weight: 400;
+    margin: 5px 5px 6px 30px;
+    color: white;
+}
+.guide
+{
+    padding: 50px 0;
+}
+.guideRow
+{
+    margin: 60px 0;
+}
+.guideBox
+{
+    margin: 15px 0;
+    padding: 20px 80px;
+    color: white;
+}
+.guideBox img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-left: -24px;
+}
+.guideBox h4
+{
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.guideBox p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 10px 0;
+}
+.guidBoxRight img
+{
+   width: 100%;
+   height: 100%;
+}
+
+.works
+{
+    padding: 50px 0;
+}
+.worksRight
+{
+    margin: 14px 0;
+    background-image: url(../img/sbc.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 25px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+.worksRight:hover
+{
+    box-shadow: 0 0 12px 1px rgb(80 184 220 / 70%);
+}
+.worksRight img{
+    height: 140px;
+    width: 140px;
+    padding: 8px;
+}
+.worksRight h5{
+    font-size: 24px;
+    font-weight: 600;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+}
+.worksRight p 
+{
+    margin-left: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+.slImg
+{
+    padding: 20px;
+    height: 90%;
+    margin-top: 10px;
+}
+
+.works .btn-hover 
+{
+    display: block;
+    width: 300px;
+    margin: 50px auto;
+}
+.process,.testomonial
+{
+    padding: 60px 0;
+}
+.process h3,.testomonial h3,.membership h3
+{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.process h3 span
+{
+    color: red;
+    display: inline-block;
+    margin-left:20px;
+}
+.testomonial h3 span,.membership h3 span
+{
+    color: #4191b6;
+}
+.carouselDiv
+{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #2d2f6d;
+    padding:50px;
+    border-radius: 10px;
+    width: 700px;
+    color: white;
+    box-shadow: 0 0 12px 1px rgb(80 184 220 / 70%);
+}
+.owl-carousel .item 
+{
+    display: flex;
+    justify-content: center;
+}
+.carouselLeft img
+{ 
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50% !important;  
+}
+.carouselright 
+{
+    margin-left: 25px;
+}
+.carouselright h5 
+{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.carouselright h6 
+{
+    font-size: 18px;
+    color: #4191b6;
+    margin: 5px 0 10px;
+}
+.carouselright p 
+{
+    font-size: 17px;
+    text-align: justify;
+}
+
+.membership
+{
+    padding: 60px 0;
+}
+.membership h3
+{
+    margin-bottom: 100px;
+}
+
+.membershipBox
+{
+    margin: 30px 0;
+    padding: 30px;
+    background-image: url('../img/sbc.svg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    background-color: #0f123d;
+    border-radius:44px;
+    background-repeat: no-repeat;
+    height:30vh;
+}
+.membershipBox:hover 
+{
+    box-shadow: 0 0 12px 1px rgb(80 184 220 / 70%);
+}
+.membershipBox img 
+{
+   width: 100px;
+   position: absolute;
+   top: -65px;
+   left: 50px;
+}
+
+.membershipBox h5 
+{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+.membershipBox p 
+{
+    font-size: 18px;
+    color: white;
+    margin: 4px 0;
+}
+
+.newsletter
+{
+    background-image: url('../img/e1.svg');
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; color: white;
+    border-radius: 20px;
+}
+.newsletter h3 
+{
+    font-size: 35px;
+    font-weight: 600;
+    margin: 10px 0;
+   
+}
+.newsletter p 
+{
+    font-size: 15px;
+    margin: 2px 0;
+}
+.newsletter p a 
+{
+    color: #fff !important;
+    display: inline-block;
+}
+
+.newsBtn
+{
+    margin-top: 20px;
+    display: inline-block;
+    width: 200px;
+}
+
+.footer
+{
+    padding: 250px 0 150px;
+}
+
+.footerBox
+{
+    margin: 15px 0;
+    color: white;
+    text-align: center;
+}
+.footerBox h5 
+{
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+.footerBox p a 
+{
+    font-size: 15px;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.copyright
+{
+    text-align: center;
+    margin-top: 140px;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.copyright i 
+{
+    color: #e43603;
+}
